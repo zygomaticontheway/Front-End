@@ -1,0 +1,10 @@
+.orange-box{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box; 
+        /* content box - размер бокса расширится на padding, border и тд и выйдет за рамки 250px*/
+        /* border-box -  размер бокса сузится, не выходя за пределы 250px*/
+}
