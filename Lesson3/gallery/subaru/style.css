@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fff;
+}
+.cars{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.cars div{
+width: 360px;
+height: 360px;
+background-color: #f8f8f8;
+outline: 1px solid black; /*тот же border nолько находится снаружи блока*/
+margin: 20px;
+background-image: url(https://subaru.ru/uploads/blocks/resize__320_be46c15c4ccab75109582f3dc9a7372460f01b6592b39.png);
+background-repeat: no-repeat; /*в случае большого экрана картинка не повторряется*/
+background-size: 90%;
+background-position: center;
+}
