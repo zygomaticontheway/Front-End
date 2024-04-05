@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" id="contact-form">
+        <div>
+            <label for="email_">Email
+                <input id="email_" type="email" placeholder="example@mailhosting.com" required> <!--required - обязательное поле-->
+            </label>
+        </div>
+        <div>
+            <label for="password_">Password
+                <input id="password_" type="password" placeholder="Enter your password" required>
+            </label>
+        </div>
+        <div>
+            Ваш возраст
+            <div>
+                <input id="age1" type="radio" name="age" value="0-18">
+                <label for="age1">0-18</label>
+            </div>
+            <div>
+                <input id="age2" type="radio" name="age" value="19-50">
+                <label for="age2">19-50</label>
+            </div>
+            <div>
+                <input id="age3" type="radio" name="age" value="51+">
+                <label for="age3">51+</label>
+            </div>
+            <div>
+                <input type="color" name="color" id="favourite-color">
+                <label for="favourite-color">Любимый цвет</label>
+            </div>
+            <div>
+                <textarea name="text" id="" cols="30" rows="10" minlength="3" maxlength="10"></textarea>
+            </div>
+            <div>
+                <input type="date" name="birth-date" id="birth-date" min="1988.06.04">
+                <label for="birth-date">Дата рождения</label>
+            </div>
+            <br>
+            <div>
+                <label for="friendsCount">Количество друзей (до 5000):</label>
+                <br>
+                <input type="range"
+                    name="friendsCount"
+                    id="friendsCount" 
+                    min="0" max="5000" 
+                    oninput="this.nextElementSibling.value= this.value">
+                <output>0</output>
+            </div>
+            <div>
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel">
+            </div>
+            <div>
+                <label for="contact">Способ связи с вами
+                    <select name="contact" id="contact">
+                        <option value="phone">Мы вам перезвоним</option>
+                        <option value="email">Электронная почта</option>
+                        <option selected value="telegram">Telegram</option> <!--выбран по умолчанию-->
+                        <option value="whatsapp">Whatsapp</option>
+                        <option value="self-recall">Я сам вам позвоню</option>
+                        <option value="our-address">Я навещу вас лично</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div>
+            <label for="agree1">Соглашаюсь на спам</label>
+            <input type="checkbox" name="agree-spam" id="agree1" value="yes">
+        </div>
+        <div>
+            <label for="agree2">Соглашаюсь на обработку персональных данных</label>
+            <input type="checkbox" name="agree-terms" id="agree2" value="yes">
+        </div>
+        <div>
+            <label for="agree3">Соглашаюсь на аренду моей квартиры</label>
+            <input type="checkbox" name="agree-flatRent" id="agree3" value="yes" checked> <!--выбран по умолчанию-->
+        </div>
+        <div>
+            <!-- загрузка файлов -->
+            <p>
+                <input type="file" name="userPhoto" tabindex=""> <!--tabindex - позволяет переключаться по форме по нажатию на tab-->
+            </p>
+        </div>
+        <div>
+            <p>Действие</p>
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить форму</button>
+        </div>
+
+
+    </form>
+</body>
+</html>
