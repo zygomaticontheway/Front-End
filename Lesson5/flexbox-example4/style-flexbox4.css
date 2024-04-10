@@ -1,0 +1,39 @@
+.container1 {
+    background-color: lightpink;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: aliceblue;
+    
+}
+.purple {
+    background-color: purple;
+    font-size: 45px;
+    padding: 10px;
+}
+.small {
+    height: 150px;
+    width: 150px;
+}
+.midle {
+    height: 250px;
+    width: 150px;
+}
+.big {
+    height: 300px;
+    width: 150px;
+}
+.container2 {
+    background-color: lightpink;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+    color: aliceblue;
+    height: 800px;
+    flex-wrap: wrap;
+}
+#first-item{
+    color: gold;
+    font-size: 80px;
+}
