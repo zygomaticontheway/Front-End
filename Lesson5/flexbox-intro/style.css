@@ -1,0 +1,30 @@
+.container1{
+    background-color: lightgoldenrodyellow;
+    display: flex; /*сообщает, что контейнер гибкий и элементы внутри будут располагаться по правилам flexbox*/
+    padding: 20px;
+    gap: 20px; /*расстояние между элементами*/
+    justify-content: space-between; /* управляет расположением элтов по основной оси*/
+    color: white;
+
+}
+.box{
+    width: 250px;
+    height: 350px;
+}
+.red{
+    background-color: red;
+    padding: 10px;
+}
+.green{
+    background-color: green;
+    padding: 10px;
+}
+.container2{
+    background-color: lightgreen;
+    display: flex; /*сообщает, что контейнер гибкий и элементы внутри будут располагаться по правилам flexbox*/
+    padding: 10px;
+    gap: 20px; /*расстояние между элементами*/
+    justify-content: flex-end; /* управляет расположением элтов по основной оси*/
+    color: white;
+
+}

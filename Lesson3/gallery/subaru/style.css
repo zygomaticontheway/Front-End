@@ -7,8 +7,9 @@ body{
 }
 .cars{
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; /*перепрыгивает на следующуюс троку*/
+    justify-content: center;
+    position: relative;
 }
 .cars div{
 width: 360px;
@@ -20,4 +21,30 @@ background-image: url(https://subaru.ru/uploads/blocks/resize__320_be46c15c4ccab
 background-repeat: no-repeat; /*в случае большого экрана картинка не повторряется*/
 background-size: 90%;
 background-position: center;
+transition: background .5s;
+}
+.cars div:hover{
+    background-size: 150%;
+    background-position: right 120% top 50%;
+}
+.cars div:hover .descr{
+    opacity: 1;
+    transition: background .5s;
+}
+.cars div .descr{ /* самое точное обращение к тегу - всю цепочку*/
+    position: relative;
+    opacity: 0;
+    display: inline-block;
+    color: blue;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 4px;
+    transition: background .5s, color .9s;
+    top: 270px;
+    left: 20px;
+}
+.cars div .descr:hover{
+    background-color: blue;
+    color: white;
 }

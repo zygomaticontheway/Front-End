@@ -1,0 +1,23 @@
+.main-container{
+    background-color: lavenderblush;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* row-gap - строка; column-gap также есть такие свойства*/
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 250px;
+    height: 300px;
+    border: 3px solid red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
