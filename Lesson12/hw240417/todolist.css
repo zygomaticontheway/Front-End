@@ -1,5 +1,7 @@
+
 .btn-container{
     font-size: 0;
+    padding-left: 120px;
 }
 .btn{
     border:none;
@@ -8,16 +10,8 @@
     display: inline;
     padding: 10px;
     border-radius: 10px;
+    border: 1px solid whitesmoke;
 
-}
-.left{
-    background-color: lightblue;
-    color: white;
-    margin-right: 0;
-    display: inline;
-    padding: 10px;
-    border-radius:10px 0 0 10px;
-    border: 1px solid black;
 }
 .right{
     background-color: lightpink;
@@ -26,9 +20,29 @@
     margin-left: 0;
     padding: 10px;
     border-radius:0 10px 10px 0 ;
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
+    width: 138px;
+}
+.left{
+    background-color: lightblue;
+    color: white;
+    display: inline;
+    margin-right: 0;
+    padding: 10px;
+    border-radius:10px 0 0 10px;
+    border: 1px solid whitesmoke;
+    width: 138px;
+}
+.input {
+    min-width: 400px;
+    display: inline;
+    margin-right: 0;
+    padding: 10px;
+    border-radius:10px 0 0 10px;
+    border: 1px solid whitesmoke;
 }
 .ul-container{
     min-height: 200px;
     max-height: fit-content;
+    
 }
