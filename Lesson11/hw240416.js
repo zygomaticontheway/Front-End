@@ -52,4 +52,46 @@ const teslaInsteadOfDiesel = cars.map((car)=>{
     }
     return car;
  });
- console.log(teslaInsteadOfDiesel);
+console.log(teslaInsteadOfDiesel);
+
+// решение от препода
+
+// Задание 1
+const newCars = cars.map((car) => {
+    return {brand: car.brand, isDiesel: car.isDiesel};
+});
+console.log(newCars);
+
+// Задание 2
+const dieselCars = cars.filter((car) => car.isDiesel);
+console.log(dieselCars);
+
+// Задание 3
+const nonDieselCars = cars.filter((car) => !car.isDiesel);
+console.log(nonDieselCars);
+
+// Задание 4
+const sum = cars
+    .filter((car) => !car.isDiesel) //получили выборку не дизельны хмашин
+    .map((car) => car.price)
+    .reduce((acc, price) => acc + price, 0);
+    console.log(sum);
+
+// Задание 5
+cars.forEach((car) => car.price *= 1.2);
+console.log(cars);
+
+// Задание 6
+const cars2 = cars.map((car) => {
+    if (car.isDiesel) {
+        return {brand: "Tesla", price: 25000, isDiesel: false};
+    }
+    return car;
+});
+console.log(cars2);
+
+// Задание 6 через тернарный оператор
+const cars3 = cars.map((car) => 
+    car.isDiesel ? {brand: "Tesla", price: 25000, isDiesel: false} : car
+);
+console.log(cars2);
