@@ -29,7 +29,11 @@ transition: background .5s;
 }
 .cars div:hover .descr{
     opacity: 1;
+<<<<<<< HEAD
     transition: background .5s;
+=======
+    transition: ;
+>>>>>>> 3c7f7898ab50da8bb252c033521f255055cc72fb
 }
 .cars div .descr{ /* самое точное обращение к тегу - всю цепочку*/
     position: relative;
