@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="ninja.js" defer></script>
+    <link rel="stylesheet" href="ninja.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja ToDo list</title>
+</head>
+<body>
+    <form id="form">
+        <input type="text" name="nickname" placeholder="Name" required>
+        <input type="text" name="place" placeholder="Location" required>
+        <button type="submit" class="btn">Add a person to list</button>
+        <!-- <button type="submit" class="btn" id="clear-inputs">Clear inputs</button> -->
+    </form>
+    <br>
+    <ul id="persons-list"></ul>
+    <div class="btn-container">
+        <button id="clear" class="btn left">Clear list</button>
+        <button id="clear-one" class="btn right">Delete one element</button>
+    </div>
+    
+</body>
+</html>

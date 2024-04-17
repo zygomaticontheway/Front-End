@@ -1,0 +1,36 @@
+.container {
+    margin: 50px;
+    background-color: lightblue;
+    border-radius: 15px;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.button {
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.counter {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: brown;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+.center{ /* для выравнивания контента по центру экрана лучше заключать его в отдельный <div>, иначе вышестоящий родитель выровняет всех детей внутри */
+    display: flex;
+    justify-content: center;
+}
+
+/* если применить выравнивание к body, то оно применится ко всем его детям. Для нашего примера допустимо, но если будет больше элементов, то выравнивание применится к ним всем*/
+/* body{
+    display: flex;
+    justify-content: center;
+} */
