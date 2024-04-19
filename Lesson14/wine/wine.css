@@ -1,0 +1,19 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 колонок по 1 элементу*/
+    gap: 40px;
+}
+
+.container div{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*выравнивание контента по горизонтали*/
+    align-items: center; /*вертикальное выравнивание*/
+}
+
+.container p{
+    text-align: center; /*выравнивание текста по центру*/
+}
