@@ -17,3 +17,7 @@
 .container p{
     text-align: center; /*выравнивание текста по центру*/
 }
+
+.container img{
+    max-width: 150px;
+}
