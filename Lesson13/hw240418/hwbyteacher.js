@@ -1,3 +1,27 @@
+// Задание 1
+// Создайте метод getStudent, который возвращает promise - объекта (студент с именем "Anri" и возрастом 32), c задержкой 4 секунды.
+// Вызовите этот метод - сохраните в переменную.
+// Раскройте promise при помощи then, выведите имя студента.
+
+function getStudent(){
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            resolve({name: "Anri", age: 32});
+        }, 4000)
+    });
+};
+let x;
+
+getStudent().then((student) => {
+    console.log("hello");
+    console.log(student.name); //Anri
+    x = student.name;
+    console.log("внутри колбека", x); //выведется вторым Anri
+})
+
+console.log("снаружи колбека", x); //выведется первым undefined
+
+
 // Задание 2 (Дополнительно)
 
 // Напишите функцию getDriverLicence, которая принимает в себя два аргумента success и failure.
@@ -16,25 +40,21 @@
 
     // Ниже вызвать функцию getDriverLicence, передав в нее аргументами две другие функции.
 
-let result = Math.random();
-console.log("result is " + result);
-
-
-function getDriverLicence (success, failure){
-    if (result >0.1){
-        return success("успех!");
+function getDriverLicense(success, failure){
+    if (Math.random() > 0.1){
+        success("успех!");
     }
     else {
-        return failure("упс, неудача :(");
+        failure("упс, неудача :(");
     }
 }
 
-function success (result){
-    console.log(`Успешно завершено с результатом ${result} `);
+function success(result){
+    console.log(`"Успешно завершено с результатом " ${result}`);
 }
 
-function failure (error){
-    console.log(`Завершено с ошибкой ${error}`);
+function failure(failure){
+    console.log(`"Завершено с ошибкой " ${failure}`);
 }
 
-getDriverLicence (success, failure);
+getDriverLicense(success, failure);
