@@ -1,11 +1,12 @@
 const containerElt = document.querySelector(".container");
+const ip = "176.199.208.229";
 
 async function geojs() {
     const getGeojs = await fetch ("https://get.geojs.io/v1/ip/geo.json");
     const geoObj = await getGeojs.json();
     console.log(geoObj);
     const {latitude, longitude, city, country, region} = geoObj;
-    console.log(latitude, longitude, country, city);
+    console.log(latitude, longitude, country, city, region);
     
     const regionContainerElt = document.createElement ("div");
     regionContainerElt.className = "regionContainer";
@@ -13,9 +14,13 @@ async function geojs() {
     const cityContainerElt = document.createElement ("div");
     cityContainerElt.className = "cityContainer";
 
-    const countryElt = document.createElement ("p");
-    const regionElt = document.createElement ("p");
-    const cityElt = document.createElement ("p");
+    const countryElt = document.createElement ("span");
+    const regionElt = document.createElement ("span");
+    const cityElt = document.createElement ("span");
+
+    regionContainerElt.append (countryElt, regionElt);
+    
+    cityContainerElt.append (cityElt);
 
     weather(geoObj);
 }
