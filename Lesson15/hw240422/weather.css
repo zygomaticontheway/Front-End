@@ -1,0 +1,18 @@
+.container{
+    background-image:url("https://mf-static.meteofor.st/ui-mf/assets/bg-desktop-wide/n.webp");
+    height: 150px;
+    width:auto;
+    border-radius: 15px;
+    color: white;
+    padding: 20px;
+}
+.regionContainer{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.cityContainer{
+    padding: 10px;
+    font-size: 22px;
+}
