@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    
+}
+.container{
+    background-image: url("./media/background.jpg");
+    background-size:contain;
+    width: 700px;
+    height: 700px;;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    justify-items: center;
+}
+.img-container{
+    display:flow-root;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    height: inherit;
+}
+#icon{
+    width: 400px;
+    height: auto;
+}
+#h1{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+}
+#refreshButton{
+    width: 90px;
+    height: 40px;
+    border-radius: 3px;
+    border-style: hidden;
+    background-color: chocolate;
+}
