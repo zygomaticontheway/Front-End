@@ -190,7 +190,10 @@ grid_banners_data.forEach(({back_img, sub_title, title, btn}) => {
     titleElem.innerText = title;
     // Устанавливает текст subTitleElem и titleElem в подзаголовок и заголовок соответственно.
     
+    
+    btn === undefined ? '' : btnElem.classList.add("btnElem");
     btn === undefined ? "" : btnElem.innerText = btn; // убеждаемся, что в btn есть текст, этого ключа может и не быть
+    
     // "Если переменная btn равна undefined, установить текст элемента btnElem в пустую строку,
     // в противном случае установить текст элемента btnElem равным значению переменной btn".
  

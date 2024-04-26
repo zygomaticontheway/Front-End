@@ -210,6 +210,7 @@ titleElem.innerText= title;
 
 
 btn === undefined ? '' : btnElem.innerText = btn;
+btn === undefined ? '' : btnElem.classList.add("btnElem");
   // "Если переменная btn равна undefined, установить текст элемента btnElem в пустую строку,
   // в противном случае установить текст элемента btnElem равным значению переменной btn".
  
