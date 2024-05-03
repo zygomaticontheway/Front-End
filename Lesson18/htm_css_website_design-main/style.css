@@ -26,5 +26,192 @@
     box-sizing: border-box;
     z-index: 1;
     border: 1px solid rgba(167, 157, 245, 0.1);
+}
+.searchBox input{
+    width: 140px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #1f1f1f;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+.firstSectionImage{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%, -50%);
+}
+.firstSectionImage img{
+    height: 400px;
+}
+.firstSectionHeading{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-40%, -50%);
+}
+.firstSectionHeading h1{
+    font-family: roboto, Arial, Helvetica;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 0px;
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    color: #3d3d4a;
+    text-transform: uppercase;
+}
+.letterSpacing{
+    letter-spacing: 7px;
+}
+.firstSectionHeading span{
+    color: #5b53ff;
+}
+.btnBuyNow{
+    width: 150px;
+    height: 40px;
+    background-color: #2f2e41;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    /* Два значения, разделенные косой чертой (/), определяют радиус скругления
+     по горизонтали и вертикали соответственно. */
+    /* 
+     Верхние углы имеют радиус скругления 10% от соответствующей стороны элемента.
+     Нижние углы также имеют радиус скругления 10% от соответствующей стороны элемента.
+     Горизонтальный радиус скругления всех углов составляет 50% от высоты элемента. */
+     /* эти значения создают скругленные углы с разным радиусом скругления  */
+    margin-top: 20px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    border: transparent !important;
+}
+.btnBuyNow:hover{
+    color: white;
+    background-color: #5b53ff;
+    transition: all ease 0.5s;
+}
+.mediaIcons{
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    padding: 1px 2px;
+    z-index: 1;
+}
+.mediaIcons a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    text-decoration: none;
+}
+.mediaIcons a i{
+    color: rgba(39, 39, 39, 0.8);
+}
+.mediaIcons a:hover .fa-facebook-f{
+    color: #5078cf;
+}
+.mediaIcons a:hover .fa-twitter{
+    color: #00acee;
+}
+.mediaIcons a:hover .fa-instagram{
+    color: orange;
+}
+.mediaIcons a:hover .fa-youtube{
+    color: red;
+}
+.productSection{
+    width: 85%;
+    /* background-color: #fff; */
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.2);
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: -60px;
+    background-size: 1000px;
+    border-radius: 10px;
+    
+}
+.productSection > h3{
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    font-family: monospace;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    color: #323543;
+    
 
+}
+.productSection span{
+    color: #5b53ff;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+.productBox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.productBox img{
+    height: 180px;
+}
+.productBox p{
+    color: #4d4d4d70;
+    font-family: monospace;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.productBox a{
+    color: #2c2c2c;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.btnCart{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background: linear-gradient(120deg, #6b60ec 20%, #a166f4);
+    color: white;
+    animation: fade 0.2s;
+}
+.btnCart:hover{
+    color: white;
 }
